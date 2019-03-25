@@ -11,5 +11,8 @@ cask 'dash-core' do
   # Renamed for consistency: app name is different in the Finder and in a shell.
   app 'Dash-Qt.app', target: 'Dash Core.app'
 
-  zap trash: '~/Library/Preferences/org.dash.Dash-Qt.plist'
+  zap trash: [
+               '~/Library/Preferences/org.dash.Dash-Qt.plist',
+               '~/Library/Saved Application State/org.dash.Dash-Qt.savedState',
+             ]
 end
