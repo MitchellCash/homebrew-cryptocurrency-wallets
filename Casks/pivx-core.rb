@@ -11,5 +11,8 @@ cask 'pivx-core' do
   # Renamed for consistency: app name is different in the Finder and in a shell.
   app 'PIVX-Qt.app', target: 'PIVX Core.app'
 
-  zap trash: '~/Library/Preferences/org.pivx.PIVX-Qt.plist'
+  zap trash: [
+               '~/Library/Preferences/org.pivx.PIVX-Qt.plist',
+               '~/Library/Saved Application State/io.pivx.Pivx-Qt.savedState',
+             ]
 end
