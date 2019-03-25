@@ -9,4 +9,6 @@ cask 'dash-electrum' do
   homepage 'https://electrum.dash.org/'
 
   app 'Dash Electrum.app'
+
+  zap trash: '~/Library/Saved Application State/Electrum-DASH.savedState'
 end
