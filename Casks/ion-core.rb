@@ -10,5 +10,8 @@ cask 'ion-core' do
   # Renamed for consistency: app name is different in the Finder and in a shell.
   app 'Ion-Qt.app', target: 'Ion Core.app'
 
-  zap trash: '~/Library/Preferences/org.ioncoin.Ion-Qt.plist'
+  zap trash: [
+               '~/Library/Preferences/org.ioncoin.Ion-Qt.plist',
+               '~/Library/Saved Application State/io.ion.Ion-Qt.savedState',
+             ]
 end
