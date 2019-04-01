@@ -1,6 +1,6 @@
 cask 'pivx-core' do
-  version '3.1.1'
-  sha256 '75f1a265b36c5f1df2a389a3b1d90bcfbd78625e8cd7ea723867c791c031c94c'
+  version '3.2.0'
+  sha256 'dae844e0a2aa8b72c09bba8cd40d46e338d3d6801aa342a9b79e7bbe5e7e5f8a'
 
   # github.com/PIVX-Project/PIVX was verified as official when first introduced to the cask
   url "https://github.com/PIVX-Project/PIVX/releases/download/v#{version}/pivx-#{version}-osx-unsigned.dmg"
